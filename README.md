@@ -1,9 +1,10 @@
 # gran
+
 Basic and fully customizable Open edX theme
 
 This theme is an combinations of  https://github.com/overhangio/indigo  and https://github.com/dehamzah/starter-theme-openedx
  
- It's very basic but  powerful, you can change most part of LMS very easily. I tired this on Tutor(https://docs.tutor.overhang.io/) which is Open edx Juniper(https://open.edx.org/).But that can be implement native version of Juniper as well.
+ It's very basic but  powerful, you can change most part of LMS very easily. I tired this on Tutor Juniper(https://docs.tutor.overhang.io/). But it's probably can work with native installations of Open edX also.
 
  ## Installation:
 
