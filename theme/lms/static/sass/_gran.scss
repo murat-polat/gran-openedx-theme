@@ -1,0 +1,113 @@
+
+.header-global h1.logo img {
+	max-height: 40px;
+}
+.global-header .header-logo a .logo {
+    float: left;
+    height: 75px;
+    border-radius: 50%;
+}
+.home > header {
+	background: url('/static/gran/images/gran.jpg');
+	background-size: cover;
+	background-position: 50%;
+
+	.outer-wrapper {
+		padding-top: 150px;
+	    padding-bottom: 150px;
+	}
+	.title {
+		background: transparent;
+		box-shadow: none;
+		margin-left: 0;
+
+		> .heading-group h1 {
+			color: #fff;
+			text-shadow: none;
+		}
+		> .heading-group p {
+			color: #fff;
+		}
+	}
+}
+
+.courses-container .courses {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    background-color: azure;
+    
+}
+
+.home .highlighted-courses {
+    box-sizing: border-box;
+    margin-bottom: auto;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+
+}
+
+////// Article Section //////
+
+.artikler  {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    .box {
+        background-color: rgb(234, 240, 240);
+        text-align: center;
+        padding: 1.5rem 2rem;
+        box-shadow: 0 1px 5px rgba(197, 179, 179, 0.8);
+      } > p {
+          color: cadetblue;
+      } > h1 h3 {
+          color: rosybrown;
+      }
+    
+
+   } 
+
+/////// Course category  section//////// ( Not Used !)
+
+
+.kurskategori {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    column-gap: 1em;
+    
+     > div {
+         background-color: rgb(217, 216, 224);
+         padding: 1em;
+     } > a {
+         color: cadetblue;
+     } > box {
+         background-color: rgb(181, 191, 209);
+         box-sizing: border-box;
+         
+     }
+  
+    }
+////// Footer   ////// 
+.wrapper-footer {
+    box-shadow: none;
+    padding: 25px 40px;
+
+     
+    .wrapper-logo {
+        display: none;
+    }
+    .copyright {
+        display: none;
+    }
+    .nav-legal ul {
+        display: none;
+    }
+    footer#footer-openedx .footer-about-openedx a {
+        float: none;
+    }
+  }
