@@ -1,4 +1,4 @@
-# Comprehensive, custom Open edX theme,  gran
+# Comprehensive, custom Open edX theme,  gran-openedx-theme
 
 Basic and fully customizable Open edX theme
 
@@ -10,11 +10,11 @@ This theme is a combinations of  https://github.com/overhangio/indigo  and https
 
  Clone this repository:
 
-`git clone https://github.com/murat-polat/gran`
+`git clone https://github.com/murat-polat/gran-openedx-theme`
 
  Render (paver/update) theme:
 
-`tutor config render  ./gran/theme "$(tutor config printroot)/env/build/openedx/themes/gran" `
+`tutor config render  ./gran-openedx-theme/theme "$(tutor config printroot)/env/build/openedx/themes/gran-openedx-theme" `
 
 Rebuild the Open edX docker image::
 
@@ -29,7 +29,7 @@ Restart your platform::
 
 Set your theme some default theme:
 
-`tutor local settheme gran localhost  $(tutor config printvalue LMS_HOST)`
+`tutor local settheme gran-openedx-theme localhost  $(tutor config printvalue LMS_HOST)`
 
 
 
