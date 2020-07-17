@@ -9,29 +9,30 @@ This theme is an combinations of  https://github.com/overhangio/indigo  and http
 
  Clone this repository:
 
- ` git clone https://github.com/murat-polat/gran`
+`git clone https://github.com/murat-polat/gran`
 
  Render (paver/update) theme:
 
-  `tutor config render  ./gran/theme "$(tutor config printroot)/env/build/openedx/themes/gran" `
+`tutor config render  ./gran/theme "$(tutor config printroot)/env/build/openedx/themes/gran" `
 
 Rebuild the Open edX docker image::
 
-tutor images build openedx
+`tutor images build openedx`
 
 
 Restart your platform::
 
 
-tutor local quickstart   or ` tutor local start -d`
+`tutor local quickstart`   or  `tutor local start -d`
 
 
 Set your theme some default theme:
 
-tutor local settheme gran localhost  $(tutor config printvalue LMS_HOST) 
+`tutor local settheme gran localhost  $(tutor config printvalue LMS_HOST)`
 
 
 
+After your code and customizations, you must repeat all steps above......
 
 Done :)
 
