@@ -6,6 +6,8 @@ This theme is a combinations of  https://github.com/overhangio/indigo  and https
  
  It's very basic, and not so fency, but  powerful. You can change most part of LMS very easily. I tired this on Tutor Juniper(https://docs.tutor.overhang.io/). But it's probably can work with native installations of Open edX also.
 
+ ![](src/granV1.png)
+
  ## Installation:
 
  Clone this repository:
@@ -37,4 +39,4 @@ After your code and customizations, you must repeat all steps above......
 
 Done :)
 
-![](src/granV1.png)
+
