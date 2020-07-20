@@ -37,5 +37,5 @@ After your code and customizations, you must repeat all steps above......
 
 Done :)
 
-![](src/head.png)
-![](src/foot.png)
+![](src/granV1.png)
+!
