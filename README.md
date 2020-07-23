@@ -31,12 +31,9 @@ Restart your platform::
 
 Set your theme some default theme:
 
-`tutor local settheme gran-openedx-theme localhost  $(tutor config printvalue LMS_HOST)`
+`tutor local settheme gran-openedx-theme localhost studio.localhost  $(tutor config printvalue LMS_HOST) $(tutor config printvalue CMS_HOST)`
 
-
-
-After your code and customizations, you must repeat all steps above......
 
 Done :)
 
-
+Note : After your code and customizations, you must repeat all steps above......
