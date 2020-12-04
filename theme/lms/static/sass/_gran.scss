@@ -10,7 +10,7 @@
 .home > header {
 	background: url('/static/gran-openedx-theme/images/gran.jpg');
 	background-size: cover;
-	background-position: 50%;
+	background-position: 35%;
 
 	.outer-wrapper {
 		padding-top: 150px;
@@ -31,16 +31,30 @@
 	}
 }
 
-.courses-container .courses {
+.courses-container  {
     display: flex;
-    width: 75%;
+    border-radius: 10px 100px / 120px;
+    width: 80%;
     margin: auto;
-    background-color: azure;
+    text-decoration: solid;
+    color: blueviolet;
+    text-shadow: darken($color: #000000, $amount: 0);
+    justify-content: center space-between;
+    background-color: rgb(206, 235, 235);
     
+}
+.courses .courses-listing-item {
+    margin: auto;
+    border-radius: 30px;
+    text-decoration: solid;
+    color: blueviolet;
+    text-shadow: darken($color: #000000, $amount: 0);
+    justify-content: center;
 }
 
 .home .highlighted-courses {
     box-sizing: border-box;
+    justify-self: center;
     margin-bottom: auto;
     position: relative;
     width: 100%;
@@ -52,7 +66,7 @@
 ////// Article Section //////
 
 .artikler  {
-    display: grid;
+    display: flexbox;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
