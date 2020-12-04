@@ -34,7 +34,6 @@ Set your theme some default theme:
 `$ tutor local settheme gran-openedx-theme localhost studio.localhost  $(tutor config printvalue LMS_HOST) $(tutor config printvalue CMS_HOST)`
 
 
-Done :)
 
 Note : After your code and customizations, you must repeat "render" , "build" and "quickstart" commands..
 
@@ -50,7 +49,9 @@ https://docs.tutor.overhang.io/dev.html#customised-themes
 
 Start a new terminal than
 
-`$ tutor dev run watchthemes`  For to compile your changes. Maybe you need an other terminal for "render" :)
+`$ tutor dev run watchthemes`  For to compile your changes. Maybe you need an other terminal for "render" 
+
+Done :)
 
 
 
