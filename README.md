@@ -49,7 +49,9 @@ https://docs.tutor.overhang.io/dev.html#customised-themes
 
 Start a new terminal than
 
-`$ tutor dev run watchthemes`  For to compile your changes. Maybe you need an other terminal for "render" 
+`$ tutor dev run watchthemes`  For to compile your changes. 
+
+Maybe you need an other terminal for "render" your customizations 
 
 Done :)
 
