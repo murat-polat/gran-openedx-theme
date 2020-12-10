@@ -64,25 +64,30 @@
 }
 
 ////// Article Section //////
+* {box-sizing: border-box;}
 
-.artikler  {
-    display: flexbox;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.artikler {
+  border: 2px solid #c0c7d4;
+  border-radius: 15px;  
+  background-color: #dbcfbe;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+}
 
+.artikler > div {
+  border: 2px solid #d4b18a;
+  border-radius: 15px;
+  background-color: #d8dbe2;
+  padding: 1em;
+  color: lightslategrey;
 }
-.artikler .box {
-        background-color: rgb(234, 240, 240);
-        text-align: center;
-        padding: 1.5rem 2rem;
-        box-shadow: 0 1px 5px rgba(197, 179, 179, 0.8);
-       > p {
-          color: cadetblue;
-      } 
-    }
-.artikler  h1 h3 {
-    color: rosybrown;
+.artikler > h3 {
+    color: olivedrab;
+    justify-content: center;
 }
+  
+
    
 
 /////// Course category  section//////// ( You can change it !)
