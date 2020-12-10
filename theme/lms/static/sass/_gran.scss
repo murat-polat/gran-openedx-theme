@@ -64,14 +64,15 @@
 }
 
 ////// Article Section //////
+
 * {box-sizing: border-box;}
 
 .artikler {
   display: grid;
   border: 2px solid #c0c7d4;
   border-radius: 15px;  
-  background-color: #dbcfbe;  
-  justify-content: space-between;  
+  background-color: white;  
+  column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
     h3 {
     color: olivedrab;
@@ -105,8 +106,8 @@
 .ctgr-item  {
     width: 15%;
     font-family: Arial, Helvetica, sans-serif bold;
-    background-color: rgb(101, 65, 231);
-    border: px solid rgb(107, 167, 167);
+    background-color: rgb(219, 228, 205);
+    border: px solid rgb(195, 248, 248);
     color:orange;
     font-size: 2em;
     padding: 20px;
@@ -119,7 +120,7 @@
 }
 
 .ctgr-item:hover {
-    background-color: rgb(185, 123, 94);
+    background-color: rgb(224, 217, 214);
 }
 .ctgritems {
     min-height: 50px;
