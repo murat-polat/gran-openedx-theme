@@ -67,25 +67,27 @@
 * {box-sizing: border-box;}
 
 .artikler {
+  display: grid;
   border: 2px solid #c0c7d4;
   border-radius: 15px;  
-  background-color: #dbcfbe;
-  display: grid;
-  justify-content: space-between;
+  background-color: #dbcfbe;  
+  justify-content: space-between;  
   grid-template-columns: repeat(3, 1fr);
+    h3 {
+    color: olivedrab;
+    text-align: center;
+}
+   div {    
+    border: 2px solid #d4b18a;
+    border-radius: 15px;
+    background-color: #d8dbe2;    
+    padding: 1em;
+    color: lightslategrey;
+  }
 }
 
-.artikler > div {
-  border: 2px solid #d4b18a;
-  border-radius: 15px;
-  background-color: #d8dbe2;
-  padding: 1em;
-  color: lightslategrey;
-}
-.artikler > h3 {
-    color: olivedrab;
-    justify-content: center;
-}
+
+
   
 
    
