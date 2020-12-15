@@ -8,7 +8,7 @@
     border-radius: 50%;
 }
 .home > header {
-	background: url('/static/gran-openedx-theme/images/gran.jpg');
+	background: url('/static/gran-openedx-theme/images/gran2.png');
 	background-size: cover;
 	background-position: 35%;
 
@@ -87,7 +87,21 @@
   }
 }
 
+/////  IMAGE ANIMATIONS  /////////
+/*
+.bannerA {
+    height: 100vh;
+    width: 100%;    
 
+    img {
+        width: 120px;
+        position: absolute;
+        left: 20%;
+        top: 200% ;
+        transform: translate(-50%, -50%);
+    }
+}
+*/
 
   
 
