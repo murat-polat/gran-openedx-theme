@@ -68,7 +68,7 @@
 * {box-sizing: border-box;}
 
 .artikler {
-  display: grid;
+  display: flex;
   border: 2px solid #c0c7d4;
   border-radius: 15px; 
   transition: background-color 1.5sn; 
@@ -128,18 +128,19 @@
 
 /////// Course category  section//////// ( You can change it !)
 
-.ctgr-container {
+.ctgr-container  {
     display: flex;
     justify-content: center;    
     align-items: center;
-    text-decoration: none;  
+    text-decoration: none;
+    overflow: hidden;  
     
 }
 
 .ctgr-items  {
     width: 250px;
     height: 100px;    
-    transition: border-radius 2s;
+    transition: border-radius 1.2s;
     font-family: Arial, Helvetica, sans-serif bold;
     background: rgb(219, 228, 205);
     border: solid rgb(195, 248, 248);
