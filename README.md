@@ -1,12 +1,12 @@
 # Comprehensive, custom Open edX theme,  gran-openedx-theme
 
-Basic and fully customizable Open edX theme
+Basic and fully customizable Open edX theme with image slider
 
 This theme is a combinations of  https://github.com/overhangio/indigo  and https://github.com/dehamzah/starter-theme-openedx
  
- It's very basic, and not so fency, but  powerful. You can change most part of LMS very easily. I tired this on Tutor Juniper(https://docs.tutor.overhang.io/). But it's probably can work with native installations of Open edX also.
+ It's  basic but  powerful. You can change most part of LMS very easily. I tired this on Tutor Juniper and Koa(https://docs.tutor.overhang.io/). But it's probably can work with native installations of Open edX also.
 
- ![](src/granV1.png)
+ ![](src/GranV2.gif)
 
  ## Installation:
 
