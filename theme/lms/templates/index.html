@@ -20,7 +20,14 @@ from openedx.core.djangolib.markup import HTML, Text
                 <%include file="index_overlay.html" />
               % endif
             </div>
-            % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
+           </div>
+
+          <%include file="index_promo_video.html" />
+        </div>
+
+      </header>
+      
+      % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
               <div class="course-search">
                 <form method="get" action="/courses">
                   <label><span class="sr">${_("Search for a course")}</span>
@@ -32,16 +39,9 @@ from openedx.core.djangolib.markup import HTML, Text
                 </form>
               </div>
             % endif
-
-          </div>
-
-          <%include file="index_promo_video.html" />
-        </div>
-
-      </header>
-      <%include file="${courses_list}" />
-
+            <%include file="${courses_list}" />
     </section>
+    
 </main>
 
 % if show_homepage_promo_video:
@@ -72,57 +72,171 @@ from openedx.core.djangolib.markup import HTML, Text
 
 % endif
 
+<br>
+<br>
 
 
 <!-- Your Custom Sections -->
 
-<!-- Slider -->
-<section>
-<div class="container">
-<div id="min_slider">
-  <figure>
-    <img src="/static/gran-openedx-theme/images/fjell.jpg">
-    <img src="/static/gran-openedx-theme/images/fjaere.jpg">
-    <img src="/static/gran-openedx-theme/images/sol.jpg">
-    <img src="/static/gran-openedx-theme/images/sol_hav.jpg">
-    <img src="/static/gran-openedx-theme/images/hauknes.jpg">
-   
-  </figure>
-</div>
-</div>
-</section>
+<!--Create Carousel-->
+ <section>
+     
+    <br>
+   <br>
+   <div class="container">
 
-<!--  Kurs Katagory Section  -->
- <div class="container"> 
- <div class="ctgr-container">
-<div class="ctgr-items" > <a href="#">Development</a>  </div>
-<div class="ctgr-items">  <a href="#">Science</a></div>
-<div class="ctgr-items"> <a href="#">Education</a> </div>
-<div class="ctgr-items"> <a href="#">Health</a> </div>
-<div class="ctgr-items"> <a href="#">Analytic</a></div>
-</div>
- </div> 
+    <div class="row col-sm ">
 
-<section >  
- <div class="container">
-<div class="artikler">    
-    <div id="alone">      
-      <h3> <span> <i class="fa fa-leaf"></i> </span> Are we alone ?</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non doloremLorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non doloremLorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non dolorem</p>
-    </div>
-    <div id="umbrella">
+    <div class="card" style="width: 18rem;">
+        <img src="/static/gran-openedx-theme/images/syrin.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="btn btn-primary btn-lg">Read more</a>
+          <a href="#" class="btn btn-warning btn-lg">Cancel</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="/static/gran-openedx-theme/images/syrin2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary btn-lg">Read more</a>
+            <a href="#" class="btn btn-warning btn-lg">Cancel</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="/static/gran-openedx-theme/images/syrin2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary btn-lg">Read more</a>
+            <a href="#" class="btn btn-warning btn-lg">Cancel</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="/static/gran-openedx-theme/images/syrin.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary btn-lg">Read more</a>
+            <a href="#" class="btn btn-warning btn-lg">Cancel</a>
+        </div>
+      </div>
       
-      <h3> <span><i class="fa fa-bullhorn"></i></span> Where is my umbrella ?</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non doloremLorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non doloremLorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non dolorem</p>
     </div>
-    <div id="water" >
-      <h3 > <span><i class="fa fa-umbrella"></i></span> Helo ! I am under the water</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non doloremLorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non doloremLorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet rerum vel vitae voluptas non dolorem</p>
-    </div>    
-  </div>
+    </div>
+
+    <br>
+    <br>
+     <div id="form-container">
+    <div class="container" >
+            <h1>Register</h1>
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <br>
+            <div class="col-12">                
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <button type="submit" class="btn btn-warning btn-lg">Cancel</button>
+            </div>
+          </form>
 </div>
+</div>  
+                
+     
 </section>
 
+
+<br>
+<br>
+
+ <br>
+ <br>
+
+ <!-- Slider -->
+ <!-- <section>
+// <div class="container">
+// <div id="min_slider">
+//   <figure>
+//     <img src="/static/gran-openedx-theme/images/fjell.jpg">
+//     <img src="/static/gran-openedx-theme/images/fjaere.jpg">
+//     <img src="/static/gran-openedx-theme/images/sol.jpg">
+//     <img src="/static/gran-openedx-theme/images/sol_hav.jpg">
+//     <img src="/static/gran-openedx-theme/images/hauknes.jpg">
+   
+//   </figure>
+// </div>
+// </div>
+// </section> -->
 
 
 

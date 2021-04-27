@@ -1,4 +1,4 @@
-
+@import "node_modules/bootstrap/scss/bootstrap";
 .header-global h1.logo img {
 	max-height: 40px;
 }
@@ -10,11 +10,13 @@
 .home > header {
 	background: url('/static/gran-openedx-theme/images/gran2.png');
 	background-size: cover;
-	background-position: 35%;
+	background-position: 15%;
+    height: 15%;
+    border-radius: 15%;
 
 	.outer-wrapper {
-		padding-top: 150px;
-	    padding-bottom: 150px;
+		padding-top: 70px;
+	    padding-bottom: 70px;
 	}
 	.title {
 		background: transparent;
@@ -38,174 +40,210 @@
 
 }
 
-////// Article Section //////
+//////  Bootstrap  //////////
 
-* {box-sizing: border-box;}
 
-.artikler {
-  display: flex;
-  border: 2px solid #c0c7d4;
-  border-radius: 15px; 
-  transition: background-color 1.5sn; 
-  background-color: white;  
-  column-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-    h3 {
-    color: olivedrab;
-    text-align: center;
-}
-   div {    
-    border: 2px solid #d4b18a;
-    border-radius: 15px;
-    background-color: #d8dbe2;    
-    padding: 1em;
-    color: lightslategrey;
-  }
-}
-.artikler #umbrella {
-    background-color: sandybrown;
-    color: slateblue;
-    transition: color 1.5sn;
+.col-sm {
+    display: flex;
+    justify-content: space-between;
+}  
+
+
+
+.card:hover {
+    background-color: rgb(245, 242, 239);
+    
 }
 
-.artikler #umbrella:hover {
-    p {
-        color: rgb(217, 218, 235);
-    }
+#form-container {
+    background-color: lemonchiffon;
 }
 
-.artikler #alone {
-    background-color: rgb(236, 219, 236);
-    color: rgb(252, 245, 240);
-    transition: color 1.5sn;
+#form-container label, h1 {
+        
+    font-family:Verdana, Tahoma, sans-serif;
+    color:  rgb(17, 91, 230);
 }
 
-.artikler #alone:hover {
-    p {
-        color: rgb(98, 103, 190);
-    }
-}
+    
+    
 
-.artikler #water {
-    background-color: rgb(181, 214, 170);
-    color: rgb(196, 86, 52);
-    transition: color 1.5sn;
-}
 
-.artikler #water:hover {
-    p {
-        color: rgb(165, 135, 130);
-    }
-}
+/////////// End of Bootstarap  ////
+
+
+
+
+/////// PURE CSS3 /////////
+
+// ////// Article Section //////
+
+// * {box-sizing: border-box;}
+
+// .artikler {
+//   display: flex;
+//   border: 2px solid #c0c7d4;
+//   border-radius: 15px; 
+//   transition: background-color 1.5sn; 
+//   background-color: white;  
+//   column-gap: 20px;
+//   grid-template-columns: repeat(3, 1fr);
+//     h3 {
+//     color: olivedrab;
+//     text-align: center;
+// }
+//    div {    
+//     border: 2px solid #d4b18a;
+//     border-radius: 15px;
+//     background-color: #d8dbe2;    
+//     padding: 1em;
+//     color: lightslategrey;
+//   }
+// }
+// .artikler #umbrella {
+//     background-color: sandybrown;
+//     color: slateblue;
+//     transition: color 1.5sn;
+// }
+
+// .artikler #umbrella:hover {
+//     p {
+//         color: rgb(217, 218, 235);
+//     }
+// }
+
+// .artikler #alone {
+//     background-color: rgb(236, 219, 236);
+//     color: rgb(252, 245, 240);
+//     transition: color 1.5sn;
+// }
+
+// .artikler #alone:hover {
+//     p {
+//         color: rgb(98, 103, 190);
+//     }
+// }
+
+// .artikler #water {
+//     background-color: rgb(181, 214, 170);
+//     color: rgb(196, 86, 52);
+//     transition: color 1.5sn;
+// }
+
+// .artikler #water:hover {
+//     p {
+//         color: rgb(165, 135, 130);
+//     }
+// }
   
 
    
 
-/////// Course category  section//////// ( You can change it !)
+// /////// Course category  section//////// ( You can change it !)
 
-.ctgr-container  {
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    text-decoration: none;
-    overflow: hidden;  
+// .ctgr-container  {
+//     display: flex;
+//     justify-content: center;    
+//     align-items: center;
+//     text-decoration: none;
+//     overflow: hidden;  
     
-}
+// }
 
-.ctgr-items  {
-    width: 250px;
-    height: 100px;    
-    transition: border-radius 1.2s;
-    font-family: Arial, Helvetica, sans-serif bold;
-    background: rgb(219, 228, 205);
-    border: solid rgb(195, 248, 248);
-    font-size: 2em;
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;    
-    display: flex; 
+// .ctgr-items  {
+//     width: 250px;
+//     height: 100px;    
+//     transition: border-radius 1.2s;
+//     font-family: Arial, Helvetica, sans-serif bold;
+//     background: rgb(219, 228, 205);
+//     border: solid rgb(195, 248, 248);
+//     font-size: 2em;
+//     padding: 20px;
+//     margin: 10px;
+//     align-items: center;
+//     justify-content: center;    
+//     display: flex; 
    
    
-}
+// }
 
-.ctgr-items:hover {
-    background-color: rgb(224, 217, 214);
-    border-radius: 100px;
-    a { color: rgb(124, 42, 161); }
-    //transition: width 4s;
-}
+// .ctgr-items:hover {
+//     background-color: rgb(224, 217, 214);
+//     border-radius: 100px;
+//     a { color: rgb(124, 42, 161); }
+//     //transition: width 4s;
+// }
 
 
-///// Slider /////
+// ///// Slider /////
 
-#min_slider {
-    overflow: hidden;
-    }
-#min_slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation:20s min_slider infinite ;
-}
+// #min_slider {
+//     overflow: hidden;
+//     }
+// #min_slider figure {
+//     position: relative;
+//     width: 500%;
+//     margin: 0;
+//     left: 0;
+//     animation:20s min_slider infinite ;
+// }
 
-#min_slider figure img {
-    width: 20%;
-    float: left;
-}
+// #min_slider figure img {
+//     width: 20%;
+//     float: left;
+// }
 
-@keyframes min_slider {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: 0;
-    }
-    25% {
-        left: -100%;  
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
+// @keyframes min_slider {
+//     0% {
+//         left: 0;
+//     }
+//     20% {
+//         left: 0;
+//     }
+//     25% {
+//         left: -100%;  
+//     }
+//     45% {
+//         left: -100%;
+//     }
+//     50% {
+//         left: -200%
+//     }
+//     70% {
+//         left: -200%;
+//     }
+//     75% {
+//         left: -300%;
+//     }
+//     95% {
+//         left: -300%;
+//     }
+//     100% {
+//         left: -400%;
+//     }
 
-}
+// }
 
 
 
  
    
-////// Footer   ////// 
-.wrapper-footer {
-    box-shadow: none;
-    padding: 25px 40px;
+// ////// Footer   ////// 
+// .wrapper-footer {
+//     box-shadow: none;
+//     padding: 25px 40px;
 
      
-    .wrapper-logo {
-        display: none;
-    }
-    .copyright {
-        display: none;
-    }
-    .nav-legal ul {
-        display: none;
-    }
-    footer#footer-openedx .footer-about-openedx a {
-        float: none;
-    }
-  }
+//     .wrapper-logo {
+//         display: none;
+//     }
+//     .copyright {
+//         display: none;
+//     }
+//     .nav-legal ul {
+//         display: none;
+//     }
+//     footer#footer-openedx .footer-about-openedx a {
+//         float: none;
+//     }
+//   }
